@@ -12,7 +12,7 @@ class Solution(StrSplitSolution):
     def part_1(self) -> int:
         grid = [[j for j in i] for i in self.input]
         height, width = len(self.input) - 1, len(self.input[0]) - 1
-        return self.runFullSearch(grid, self.height, width)
+        return self.runFullSearch(grid, height, width)
 
     @answer(8318)
     def part_2(self) -> int:
